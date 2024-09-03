@@ -27,7 +27,7 @@ const sendQueryReq = (req, res, nxt) => {
 };
 
 app.get("/", sendHTML);
-app.get("/api/obj", sendObj, sendObjTwo);
+app.get("/api/obj", sendObj);
 app.get("/api/obj2", sendObjTwo);
 app.get("/appQ/", sendQueryReq);
 
