@@ -29,6 +29,7 @@ const sendQueryReq = (req, res, nxt) => {
 app.get("/", sendHTML);
 app.get("/api/obj", sendObj);
 app.get("/api/obj2", sendObjTwo);
+/** FEEDBACK: This query should send back some HTML since the path does not start with /api/. */
 app.get("/appQ/", sendQueryReq);
 
 const port = 8888;
